@@ -1,0 +1,32 @@
+/* IMPORTS */
+@import "./typography.css";
+
+/* STYLES */
+
+.btn {
+    @apply rounded-full font-normal text-base px-6;
+
+    &.btn-sm {
+        @apply px-4;
+    }
+
+    &-outline {
+        &.btn-primary {
+            @apply text-neutral border-primary;
+        }
+    }
+}
+
+.modal {
+    &[open] {
+        .modal-box {
+            @apply flex flex-col items-center text-center;
+        }
+    }
+}
+
+.badge {
+    &-xl {
+        @apply px-6 py-4;
+    }
+}

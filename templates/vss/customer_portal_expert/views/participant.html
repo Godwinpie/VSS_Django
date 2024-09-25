@@ -1,0 +1,71 @@
+{% extends "vss/customer_portal_expert/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <h2>CAS Verkehrssicherheit</h2>
+    <p><span class="font-bold">{% trans "Date" %}:</span> 13.03.2025 - 14.03.2025</p>
+    <p><span class="font-bold">{% trans "Location:" %}</span> Luzern</p>
+</section>
+<section class="mt-8">
+    <div class="flex justify-between">
+        <h2>Juan Perez</h2>
+        <div class="badge badge-error">{% trans "open" %}</div>
+    </div>
+    <p><span class="font-bold">{% trans "Membership status" %}:</span> "Individual member" %}</p>
+    <p><span class="font-bold">{% trans "Address" %}:</span> Musterstrasse 15, 8000 Musterstadt</p>
+    <p><span class="font-bold">{% trans "E-Mail" %}:</span> j.perez@fun.ch</p>
+    <p><span class="font-bold">{% trans "Phone" %}:</span> 079 555 22 33</p>
+    <p><span class="font-bold">{% trans "Company/University" %}:</span> Musterfirma AG</p>
+</section>
+<section class="mt-8">
+    <h3>{% trans "Document Uploads" %}</h3>
+    <div>
+        <table class="table max-w-xs">
+            <tbody>
+                <tr>
+                    <td>{% trans "Resume" %}</td>
+                    <td width="1%"><i class="fa-regular fa-eye"></i></td>
+                </tr>
+                <tr>
+                    <td>{% trans "Proof of Experience" %}</td>
+                    <td width="1%"><i class="fa-regular fa-eye"></i></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="mt-8">
+    <div class="flex gap-4">
+        <button class="btn btn-primary" onclick="event_accept_user.showModal()">{% trans "Confirm participation" %}</button>
+        <button class="btn btn-error">{% trans "Decline participation" %}</button>
+    </div>
+    <dialog id="event_accept_user" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 outline-none">✕</button>
+            </form>
+            <h3 class="font-bold">{% trans "Confirm participation" %}</h3>
+            <div class="py-4">
+                <p>{% trans "Do you want to accept the participant for this event?" %}</p>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">{% trans "Cancel" %}</button>
+                </form>
+                <button class="btn btn-success">
+                    {% trans "Accept" %}
+                </button>
+            </div>
+        </div>
+    </dialog>
+</section>
+<section class="mt-8">
+    <p class="font-bold mb-4">{% trans "Are the documents incomplete? Contact the participant" %}</p>
+    <button class="btn btn-sm btn-secondary">{% trans "E-Mail to participant" %}</button>
+</section>
+{% endblock %}

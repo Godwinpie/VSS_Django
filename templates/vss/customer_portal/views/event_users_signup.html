@@ -1,0 +1,114 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Register people for the event" %}</h2>
+    <div x-data="initEventSignup()">
+        <div x-show="step === 'add'">
+            <div  class="grid grid-cols-3 gap-4">
+                <template x-for="(user, index) in signup_users">
+                    <div class="card border">
+                        <div class="card-body">
+                            <div class="form-control -mt-2">
+                                <div class="label">
+                                    <span class="label-text">{% trans "Last name" %}</span>
+                                </div>
+                                <input type="text" placeholder="{% trans 'Last name' %}" class="input input-bordered w-full" :value="user.lastname" @input="changeEntry(index, 'lastname', $event.target.value)" />
+                            </div>
+                            <div class="form-control">
+                                <div class="label">
+                                    <span class="label-text">{% trans "First name" %}</span>
+                                </div>
+                                <input type="text" placeholder="{% trans 'First name' %}" class="input input-bordered w-full" :value="user.firstname" @input="changeEntry(index, 'firstname', $event.target.value)" />
+                            </div>
+                            <div class="form-control">
+                                <div class="label">
+                                    <span class="label-text">{% trans "Email" %}</span>
+                                </div>
+                                <input type="email" placeholder="{% trans 'Email' %}" class="input input-bordered w-full" :value="user.email" @input="changeEntry(index, 'email', $event.target.value)" />
+                            </div>
+                        </div>
+                    </div>
+                </template>
+            </div>
+            <div class="mt-4">
+                <a href="#" class="link link-secondary">{% trans "Multiple people? Upload CSV" %}</a>
+            </div>
+        </div>
+        <div x-cloak x-show="step === 'summary'">
+            <div class="overflow-x-auto card border">
+                <table class="table table-zebra">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th>{% trans "Last name" %}</th>
+                            <th>{% trans "First name" %}</th>
+                            <th>{% trans "Email" %}</th>
+                            <th>{% trans "Member" %}</th>
+                            <th>{% trans "Price" %}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <template x-for="user in signup_users">
+                            <tr>
+                                <td x-text="user.firstname"></td>
+                                <td x-text="user.lastname"></td>
+                                <td x-text="user.email"></td>
+                                <td>{% trans "Single" %}</td>
+                                <td>CHF 940.-</td>
+                            </tr>
+                        </template>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="flex justify-end gap-4 mt-8">
+            <button class="btn btn-outline btn-secondary" @click="step = 'add'" x-cloak x-show="step != 'add'">
+                <i class="fa-solid fa-arrow-left"></i>
+                {% trans "Back" %}
+            </button>
+            <button class="btn btn-secondary" @click="addEntry" x-cloak x-show="step == 'add'">
+                {% trans "Add another person" %}
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="btn btn-primary" @click="step = 'summary'" x-cloak x-show="step == 'add'">
+                {% trans "Next" %}
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="btn btn-primary" @click="submitSignup" x-cloak x-show="step == 'summary'">
+                {% trans "Submit registrations" %}
+                <!-- <i class="fa-solid fa-arrow-right"></i>s -->
+            </button>
+
+        </div>
+    </div>
+    <script>
+        function initEventSignup() {
+            return {
+                step: 'add', // 'add' | 'summary'
+                signup_users: [{
+                    firstname: '',
+                    lastname: '',
+                    email: ''
+                }],
+                submitSignup() {},
+                changeEntry(index, field, value) {
+                    this.signup_users[index][field] = value;
+                },
+                addEntry() {
+                    this.signup_users.push({
+                        firstname: '',
+                        lastname: '',
+                        email: ''
+                    });
+                }
+            }
+        }
+    </script>
+</section>
+{% endblock %}

@@ -1,0 +1,134 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Future events" %}</h2>
+    <table class="table table-zebra">
+        <thead>
+            <tr>
+                <th>{% trans "Event" %}</th>
+                <th>{% trans "Start date" %}</th>
+                <th>{% trans "End date" %}</th>
+                <th>{% trans "Location" %}</th>
+                <th width="1%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_upcoming' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_upcoming' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_upcoming_2' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Ongoing events" %}</h2>
+    <table class="table table-zebra">
+        <thead>
+            <tr>
+                <th>{% trans "Event" %}</th>
+                <th>{% trans "Start date" %}</th>
+                <th>{% trans "End date" %}</th>
+                <th>{% trans "Location" %}</th>
+                <th width="1%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_running' %}">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Past events" %}</h2>
+    <table class="table table-zebra">
+        <thead>
+            <tr>
+                <th>{% trans "Event" %}</th>
+                <th>{% trans "Start date" %}</th>
+                <th>{% trans "End date" %}</th>
+                <th>{% trans "Location" %}</th>
+                <th width="1%"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_past' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_past' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Networking-Event Mobilität</td>
+                <td>02.11.2024</td>
+                <td>02.11.2024</td>
+                <td>Biel</td>
+                <td>
+                    <a href="{% url 'vss:vss_account_event_detail_past' %}">
+                        <i class="fa-regular fa-eye"></i>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+{% endblock %}

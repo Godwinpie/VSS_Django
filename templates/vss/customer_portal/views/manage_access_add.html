@@ -1,0 +1,75 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <div class="max-w-2xl">
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "First name" %} *</span>
+                </div>
+                <input type="text" placeholder="{% trans 'First name' %}" class="input input-bordered w-full" />
+            </div>
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "Last name" %} *</span>
+                </div>
+                <input type="text" placeholder="{% trans 'Last name' %}" class="input input-bordered w-full" />
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mb-6">
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "E-Mail" %} *</span>
+                </div>
+                <input type="text" placeholder="{% trans "E-Mail" %}" class="input input-bordered w-full" />
+            </div>
+            <div class="form-control required">
+                <div class="label">
+                    <span class="label-text">{% trans "Mobile" %} *</span>
+                </div>
+                <input type="text" placeholder="{% trans 'Mobile' %}" class="input input-bordered w-full" />
+            </div>
+        </div>
+        <div class="mb-4">
+            <p class="font-bold">{% trans "Employee's private address" %}</p>
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="mb-4">
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "Street and number" %}</span>
+                </div>
+                <input type="text" placeholder="{% trans 'Street and number' %}" class="input input-bordered w-full" />
+            </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mb-4">
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "Postcode" %}</span>
+                </div>
+                <input type="text" placeholder="{% trans 'Postcode' %}" class="input input-bordered w-full" />
+            </div>
+            <div class="form-control">
+                <div class="label">
+                    <span class="label-text">{% trans "Location" %}</span>
+                </div>
+                <input type="text" placeholder="{% trans 'Location' %}" class="input input-bordered w-full" />
+            </div>
+        </div>
+        <div class="mt-4">
+            <a href="#" class="link link-secondary">{% trans "Multiple accesses? Upload CSV" %}</a>
+        </div>
+        <div class="flex justify-end gap-4 mt-8">
+            <a class="btn btn-primary" href="{% url 'vss:vss_manage_access' %}">
+                {% trans "Save" %}
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}

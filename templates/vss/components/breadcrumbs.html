@@ -1,0 +1,15 @@
+{% if breadcrumbs %}
+{% if breadcrumbs|length > 0 %}
+<div class="text-sm breadcrumbs mb-4">
+    <ul>
+    {% for crumb in breadcrumbs %}
+        {% if crumb.url %}
+            <li><a href="{{ crumb.url }}" title="{{ crumb.label }}">{{ crumb.label }}</a></li> 
+        {% else %}
+            <li>{{ crumb.label }}</li> 
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
+{% endif %}
+{% endif %}

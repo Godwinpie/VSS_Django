@@ -1,0 +1,123 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section>
+    <h2>{% translate "Membership" %}</h2>
+    {% if membership %}
+        <p><strong>{% translate "Membership" %}</strong>: {{ membership }}</p>
+    {% endif %}
+    {% with request.user.get_period as period %}
+        {% if period %}
+            <p><strong>{% translate "Period" %}</strong>: {{ period.runtime_start|date:"d.m.Y" }} - {{ period.runtime_end|date:"d.m.Y" }} ({% translate "Membership renews automatically" %})</p>
+        {% endif %}
+    {% endwith %}
+    {% with request.user.get_expert_rights as expert_rights %}
+        {% if expert_rights %}
+            <p><strong>{% translate "Committee expert" %}</strong>: {{ expert_rights.com_title_de }}
+        {% endif %}
+    {% endwith %}
+
+    {% with request.user.language_code as language_code %}
+        <p><strong>{% translate "Correspondence language" %}</strong>: {{ language_code }}
+        <a class="ml-6" href="{% url 'vss:vss_language_edit' %}">
+            <i class="fa-solid fa-pencil"></i>
+        </a>
+    {% endwith %}
+
+    {% if magazine_suv %}
+        <p><strong>{% translate "Road & Traffic" %}</strong>: {{ magazine_suv }}
+    {% endif %}
+
+
+</section>
+<section class="mt-8">
+    <h2>{% translate "Addresses" %}</h2>
+    <div class="flex">
+        <div class="w-96">
+            <div class="flex">
+                <h3 class="mr-6">{% translate "Company address" %}</h3>
+                <a href="{% url 'vss:vss_account_edit' %}?type=firm_address">
+                    <i class="fa-solid fa-pencil"></i>
+                </a>
+            </div>
+            <address>
+                {{ firm_address.name }} <br/>
+                {% if firm_address.name2 %}
+                    {{ firm_address.name2 }} <br/>
+                {% endif %}
+                {{ firm_address.address }} <br/>
+                {% if firm_address.address2 %}
+                    {{ firm_address.address2 }} <br/>
+                {% endif %}
+                {{ firm_address.postal_code }} {{ firm_address.city }}
+            </address>
+        </div>
+        <div class="w-96">
+            <div class="flex">
+                <h3 class="mr-6">{% translate "Billing address" %}</h3>
+                <a href="{% url 'vss:vss_account_edit' %}?type=billing_address">
+                    <i class="fa-solid fa-pencil"></i>
+                </a>
+            </div>
+            <address>
+                {{ invoice_billing_address.name }} <br/>
+                {% if invoice_billing_address.name2 %}
+                    {{ invoice_billing_address.name2 }} <br/>
+                {% endif %}
+                {{ invoice_billing_address.address }} <br/>
+                {% if invoice_billing_address.address2 %}
+                    {{ invoice_billing_address.address2 }} <br/>
+                {% endif %}
+                {{ invoice_billing_address.postal_code }} {{ invoice_billing_address.city }}
+            </address>
+        </div>
+    </div>
+    <div class="flex mt-8">
+        {% if private_address %}
+            <div class="w-96">
+                <div class="flex">
+                    <h3 class="mr-6">{% translate "Private address" %}</h3>
+                    <a href="{% url 'vss:vss_account_edit' %}?type=private_address">
+                        <i class="fa-solid fa-pencil"></i>
+                    </a>
+                </div>
+                <address>
+                    {{ private_address.name }} <br/>
+                    {{ private_address.address }} <br/>
+                    {% if private_address.address2 %}
+                        {{ private_address.address2 }} <br/>
+                    {% endif %}
+                    {{ private_address.postal_code }} {{ private_address.city }}
+                    {{ private_address.mobile_p }}
+                </address>
+            </div>
+        {% endif %}
+        {% if shipping_address %}
+            <div class="w-96">
+                <div class="flex">
+                    <h3 class="mr-6">{% translate "Delivery address" %}</h3>
+                    <a href="{% url 'vss:vss_account_edit' %}?type=delivery_address">
+                        <i class="fa-solid fa-pencil"></i>
+                    </a>
+                </div>
+                <address>
+                    {{ shipping_address.name }} <br/>
+                    {% if shipping_address.name2 %}
+                        {{ shipping_address.name2 }} <br/>
+                    {% endif %}
+                    {{ shipping_address.address }} <br/>
+                    {% if shipping_address.address2 %}
+                        {{ shipping_address.address2 }} <br/>
+                    {% endif %}
+                    {{ shipping_address.postal_code }} {{ shipping_address.city }}
+                </address>
+            </div>
+        {% endif %}
+    </div>
+</section>
+{% endblock %}

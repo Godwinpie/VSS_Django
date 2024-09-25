@@ -1,0 +1,27 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <div class="flex justify-between">
+        <h1>{{ title }}</h1>
+        <div class="badge badge-success">{% trans "Completed" %}</div>
+    </div>
+</section>
+<section class="mt-8">
+    <div class="mb-2">{% trans "Date" %}: 02.11.2024</div>
+    <div class="mb-6">{% trans "Location" %}: Kongresshaus, Biel</div>
+</section>
+<section class="mt-8">
+    <div>
+        <a class="link link-secondary" href="#">{% trans "Download participation certificate" %}</a>
+    </div>
+</section>
+<section class="mt-8">
+    <h3>{% trans "Invoice" %}</h3>
+    <div>
+        <a class="link link-secondary" href="#">{% trans "Download invoice" %}</a>
+    </div>
+</section>
+{% endblock %}

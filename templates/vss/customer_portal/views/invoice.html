@@ -1,0 +1,9 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+    <section>
+        {% include 'vss/components/breadcrumbs.html' %}
+        <h1>{{ title }}</h1>
+    </section>
+{% endblock %}

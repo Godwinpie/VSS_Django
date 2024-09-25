@@ -1,0 +1,2049 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-19 15:01+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: apps/ecommerce/views.py:79
+#, python-brace-format
+msgid "Your purchase of {product_name} was successful. Thanks for the support!"
+msgstr ""
+
+#: apps/ecommerce/views.py:87
+#, python-brace-format
+msgid "Your purchase of {product_name} was cancelled."
+msgstr ""
+
+#: apps/teams/forms.py:15 apps/teams/forms.py:17
+msgid "Team Name (Optional)"
+msgstr ""
+
+#: apps/teams/forms.py:28
+msgid "Terms and Conditions"
+msgstr ""
+
+#: apps/teams/forms.py:30
+#, python-brace-format
+msgid "I agree to the {terms_link}"
+msgstr ""
+
+#: apps/teams/forms.py:62
+msgid ""
+"That invitation could not be found. Please double check your invitation link "
+"or sign in to continue."
+msgstr ""
+
+#: apps/teams/forms.py:70
+msgid ""
+"It looks like that invitation link has expired. Please request a new "
+"invitation or sign in to continue."
+msgstr ""
+
+#: apps/teams/forms.py:78
+msgid ""
+"You must sign up with the email address that the invitation was sent to."
+msgstr ""
+
+#: apps/teams/forms.py:101
+msgid "Team Name"
+msgstr ""
+
+#: apps/teams/forms.py:102
+msgid "Team ID"
+msgstr ""
+
+#: apps/teams/forms.py:105
+msgid "Your team name."
+msgstr ""
+
+#: apps/teams/forms.py:106
+msgid "A unique ID for your team. No spaces are allowed!"
+msgstr ""
+
+#: apps/teams/forms.py:121 apps/teams/views/api_views.py:72
+msgid ""
+"There is already a pending invitation for {}. You can resend it by clicking "
+"\"Resend Invitation\"."
+msgstr ""
+
+#: apps/teams/helpers.py:13
+msgid "My Team"
+msgstr "Mon Équipe"
+
+#: apps/teams/invitations.py:18
+msgid "You're invited to {}!"
+msgstr ""
+
+#: apps/teams/models.py:94
+#, fuzzy
+#| msgid "Teams"
+msgid "Team"
+msgstr "Équipes"
+
+#: apps/teams/models.py:111
+msgid "Activate this flag for these teams."
+msgstr ""
+
+#: apps/teams/views/invitation_views.py:24
+#, python-brace-format
+msgid ""
+"It looks like you're already a member of {team}. You've been redirected."
+msgstr ""
+
+#: apps/teams/views/invitation_views.py:33
+msgid "Please log in again to accept your invitation."
+msgstr ""
+
+#: apps/teams/views/invitation_views.py:37
+#: apps/teams/views/invitation_views.py:63
+msgid "Sorry, it looks like that invitation link has expired."
+msgstr ""
+
+#: apps/teams/views/invitation_views.py:42
+msgid "You successfully joined {}"
+msgstr ""
+
+#: apps/teams/views/manage_team_views.py:26
+msgid "Manage Teams"
+msgstr ""
+
+#: apps/teams/views/manage_team_views.py:39
+msgid "Team details saved!"
+msgstr ""
+
+#: apps/teams/views/manage_team_views.py:56
+#, fuzzy, python-brace-format
+#| msgid "My Team"
+msgid "My Team | {team}"
+msgstr "Mon Équipe"
+
+#: apps/teams/views/manage_team_views.py:81 templates/teams/list_teams.html:54
+msgid "Create Team"
+msgstr ""
+
+#: apps/teams/views/manage_team_views.py:90
+#, python-brace-format
+msgid "The \"{team}\" team was successfully deleted"
+msgstr ""
+
+#: apps/teams/views/membership_views.py:22
+msgid "Sorry, you don't have permission to access that page."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:28
+msgid "You don't have permission to edit team members in that team."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:30
+msgid "You aren't allowed to change your own role."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:35
+#, python-brace-format
+msgid "Role for {member} updated."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:60
+msgid "You don't have permission to remove others from that team."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:68
+msgid ""
+"You cannot remove the only administrator from a team. Make another team "
+"member an administrator and try again."
+msgstr ""
+
+#: apps/teams/views/membership_views.py:77
+#, python-brace-format
+msgid "{member} was removed from {team}."
+msgstr ""
+
+#: apps/teams_example/views.py:20
+#, fuzzy, python-brace-format
+#| msgid "Example App"
+msgid "Example App | {team}"
+msgstr "Exemple d'application"
+
+#: apps/users/forms.py:11 templates/teams/components/team_invitations.html:24
+#: templates/teams/team_membership_details.html:22
+#: templates/vss/customer_portal/views/event_users_signup.html:31
+#: templates/vss/customer_portal/views/event_users_signup.html:33
+#: templates/vss/customer_portal/views/event_users_signup.html:51
+#: templates/vss/customer_portal_expert/views/home.html:17
+msgid "Email"
+msgstr "E-mail"
+
+#: apps/users/forms.py:12 apps/users/forms.py:50
+msgid "Language"
+msgstr "Langue"
+
+#: apps/users/forms.py:13
+msgid "Timezone"
+msgstr ""
+
+#: apps/users/forms.py:56
+msgid "Invalid language code. Please select a valid language."
+msgstr "Code de langue invalide. Veuillez sélectionner une langue valide."
+
+#: apps/users/helpers.py:39
+#, python-brace-format
+msgid "Please upload a valid image file! Supported types are {types}"
+msgstr ""
+
+#: apps/users/helpers.py:47
+#, python-brace-format
+msgid "Maximum file size allowed is 5 MB. Provided file is {size} MB."
+msgstr ""
+
+#: apps/users/models.py:115
+msgid "Honorary member"
+msgstr "Membre honoraire"
+
+#: apps/users/models.py:116
+msgid "Veteran"
+msgstr "Vétéran"
+
+#: apps/users/models.py:117
+msgid "Individual member"
+msgstr "Membre individuel"
+
+#: apps/users/models.py:118
+msgid "Corporate member"
+msgstr "Membre corporatif"
+
+#: apps/users/models.py:119
+msgid "Student member"
+msgstr "Membre étudiant"
+
+#: apps/users/models.py:120
+msgid "Free members"
+msgstr "Membres libre"
+
+#: apps/users/models.py:121
+msgid "Free institutional members"
+msgstr "Membres institutionnels libres"
+
+#: apps/users/views.py:52
+msgid "Profile successfully saved."
+msgstr ""
+
+#: apps/users/views.py:61 templates/vss/components/user_menu.html:16
+#: templates/web/components/app_nav_menu_items.html:26
+msgid "Profile"
+msgstr "Profil"
+
+#: apps/users/views.py:122
+msgid "Success!"
+msgstr "Succès!"
+
+#: apps/utils/timezones.py:42
+msgid "Not Set"
+msgstr ""
+
+#: apps/vss/views.py:53
+#, python-brace-format
+msgid "Welcome {username}"
+msgstr "Bienvenue {username}"
+
+#: apps/vss/views.py:82
+msgid "Edit address"
+msgstr ""
+
+#: apps/vss/views.py:140
+#, fuzzy
+#| msgid "Language"
+msgid "Edit Language"
+msgstr "Langue"
+
+#: apps/vss/views.py:167 apps/vss/views.py:171 apps/vss/views.py:186
+#: apps/vss/views.py:208 apps/vss/views.py:230 apps/vss/views.py:249
+#: apps/vss/views.py:268
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:36
+msgid "My events"
+msgstr "Mon événements"
+
+#: apps/vss/views.py:182 apps/vss/views.py:193 apps/vss/views.py:204
+#: apps/vss/views.py:215 apps/vss/views.py:226 apps/vss/views.py:234
+#: apps/vss/views.py:245 apps/vss/views.py:253 apps/vss/views.py:264
+#: apps/vss/views.py:272
+msgid "Networking event mobility"
+msgstr ""
+
+#: apps/vss/views.py:190 apps/vss/views.py:212
+msgid "Future"
+msgstr ""
+
+#: apps/vss/views.py:283 apps/vss/views.py:287
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:42
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:59
+msgid "Manage access"
+msgstr "Gérer les accès"
+
+#: apps/vss/views.py:298
+#, fuzzy
+#| msgid "Create account"
+msgid "Create new access"
+msgstr "Créer un compte"
+
+#: apps/vss/views.py:302
+msgid "Manage Access"
+msgstr ""
+
+#: apps/vss/views.py:306
+msgid "Add"
+msgstr ""
+
+#: apps/vss/views.py:317 apps/vss/views.py:321 apps/vss/views.py:336
+#: apps/vss/views.py:355
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:12
+msgid "My publications"
+msgstr "Mon publications"
+
+#: apps/vss/views.py:332 apps/vss/views.py:340
+msgid "Passive safety in the road space - railings"
+msgstr ""
+
+#: apps/vss/views.py:351
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:18
+#: templates/vss/customer_portal/views/publications.html:42
+msgid "My notes"
+msgstr "Mon Notes"
+
+#: apps/vss/views.py:359
+msgid "Notes"
+msgstr ""
+
+#: apps/vss/views.py:370 apps/vss/views.py:380
+msgid "Welcome Expert (Course Instructor)"
+msgstr ""
+
+#: apps/vss/views.py:390 apps/vss/views.py:394
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:24
+msgid "My orders"
+msgstr "Mon commandes"
+
+#: apps/vss/views.py:405 apps/vss/views.py:409
+msgid "My invoices"
+msgstr "Mon facutres"
+
+#: apps/vss/views.py:448
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:83
+msgid "VSS Dashboard"
+msgstr ""
+
+#: apps/vss/views.py:458
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:88
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:93
+msgid "Events"
+msgstr "Événements"
+
+#: apps/vss/views.py:468
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:98
+msgid "CAS"
+msgstr ""
+
+#: apps/vss/views.py:478 apps/vss/views.py:488
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:103
+msgid "Participant certificate"
+msgstr "Certificat de participation"
+
+#: apps/vss/views.py:498
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:113
+msgid "Membership and access"
+msgstr "Membres et entrées"
+
+#: apps/web/views.py:19
+msgid ""
+"Teams are enabled but you have no teams. Create a team below to access the "
+"rest of the dashboard."
+msgstr ""
+
+#: apps/web/views.py:37
+#, fuzzy, python-brace-format
+#| msgid "%(team)s Dashboard"
+msgid "{team} Dashboard"
+msgstr "%(team)s Tableau de bord"
+
+#: pegasus/apps/examples/forms.py:48
+msgid "Yes"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:49
+msgid "No"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:50
+msgid "Other"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:53
+msgid "Normal"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:54
+#, fuzzy
+#| msgid "Success!"
+msgid "Success"
+msgstr "Succès!"
+
+#: pegasus/apps/examples/forms.py:55
+msgid "Danger"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:58
+msgid "Do you like Django?"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:59
+msgid "Try choosing 'other' to see unhiding a form field based on a value."
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:63
+msgid "Please specify more details about your answer."
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:65
+msgid "Styled Options"
+msgstr ""
+
+#: pegasus/apps/examples/forms.py:66
+msgid ""
+"Try picking an option to see how you can style a component based on its "
+"value."
+msgstr ""
+
+#: templates/400.html:4
+msgid "Shucks. That was a bad request."
+msgstr ""
+
+#: templates/400.html:6 templates/500.html:6
+msgid ""
+"Please try again, and if you continue to get this message, contact support."
+msgstr ""
+
+#: templates/403.html:4
+msgid "Oops. You don't have permission to do that."
+msgstr ""
+
+#: templates/403.html:6
+msgid "If you think this is a mistake, contact support."
+msgstr ""
+
+#: templates/404.html:4
+msgid "Shucks. We couldn't find that."
+msgstr ""
+
+#: templates/404.html:6
+msgid ""
+"If you think this page should exist, double-check that you are signed in as "
+"the right person."
+msgstr ""
+
+#: templates/500.html:4
+msgid "Shucks. That's an error."
+msgstr ""
+
+#: templates/account/account_inactive.html:4
+#: templates/account/account_inactive.html:7
+#, fuzzy
+#| msgid "Account pages"
+msgid "Account Inactive"
+msgstr "Pages de compte"
+
+#: templates/account/account_inactive.html:8
+msgid "This account is inactive."
+msgstr ""
+
+#: templates/account/components/2fa.html:3
+msgid "Two-Factor Auth"
+msgstr ""
+
+#: templates/account/components/2fa.html:5
+msgid "You already have two-factor authentication enabled."
+msgstr ""
+
+#: templates/account/components/2fa.html:6
+msgid "Configure"
+msgstr ""
+
+#: templates/account/components/2fa.html:8
+msgid "You do not have two-factor authentication enabled."
+msgstr ""
+
+#: templates/account/components/2fa.html:9
+msgid "Enable"
+msgstr ""
+
+#: templates/account/components/profile_form.html:10
+msgid "Change Picture"
+msgstr "Changer la photo"
+
+#: templates/account/components/profile_form.html:18
+msgid "My Details"
+msgstr "Mes Details"
+
+#: templates/account/components/profile_form.html:30
+#, python-format
+msgid ""
+"\n"
+"            Your current timezone is %(user_tz)s, where it is %(now)s.\n"
+"          "
+msgstr ""
+
+#: templates/account/components/profile_form.html:34
+#, python-format
+msgid ""
+"\n"
+"            You have not set a timezone, and are using the system timezone "
+"of %(current_tz)s where it is %(now)s.\n"
+"          "
+msgstr ""
+
+#: templates/account/components/profile_form.html:40
+#: templates/vss/customer_portal/views/account_event_detail_2.html:90
+#: templates/vss/customer_portal/views/language_edit.html:16
+#: templates/vss/customer_portal/views/manage_access_add.html:70
+msgid "Save"
+msgstr "Sauvegarder"
+
+#: templates/account/email.html:4 templates/account/email.html:6
+msgid "E-mail Addresses"
+msgstr ""
+
+#: templates/account/email.html:8
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: templates/account/email.html:22
+msgid "Verified"
+msgstr ""
+
+#: templates/account/email.html:24
+msgid "Unverified"
+msgstr ""
+
+#: templates/account/email.html:26
+msgid "Primary"
+msgstr ""
+
+#: templates/account/email.html:32
+msgid "Make Primary"
+msgstr ""
+
+#: templates/account/email.html:33
+msgid "Re-send Verification"
+msgstr ""
+
+#: templates/account/email.html:34 templates/socialaccount/connections.html:32
+msgid "Remove"
+msgstr ""
+
+#: templates/account/email.html:40
+msgid "Warning:"
+msgstr ""
+
+#: templates/account/email.html:40
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: templates/account/email.html:45
+msgid "Add E-mail Address"
+msgstr ""
+
+#: templates/account/email.html:50
+msgid "Add E-mail"
+msgstr ""
+
+#: templates/account/email.html:58
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: templates/account/email/email_confirmation_message.html:3
+#, python-format
+msgid ""
+"\n"
+"  Please click the confirmation link below to activate your %(site_name)s "
+"account.\n"
+msgstr ""
+
+#: templates/account/email/email_confirmation_message.html:7
+#: templates/account/email/email_confirmation_signup_message.html:8
+msgid "Confirm Email Address"
+msgstr ""
+
+#: templates/account/email/email_confirmation_signup_message.html:3
+#, python-format
+msgid ""
+"\n"
+"  Welcome to %(site_name)s!\n"
+"  Click the confirmation link below to activate your account.\n"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.html:3
+#, python-format
+msgid ""
+"\n"
+"  Click the link below to reset your %(site_name)s password.\n"
+"  If you didn't request this, you can safely ignore this email.\n"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.html:8
+#: templates/account/email/password_reset_key_subject.txt:3
+msgid "Reset Password"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.txt:1
+#, python-format
+msgid ""
+"Hello,\n"
+"\n"
+"Please click the link below to reset your %(site_name)s password.\n"
+"\n"
+"%(password_reset_url)s\n"
+"\n"
+"If you did not try to reset your password you can safely ignore this email.\n"
+msgstr ""
+
+#: templates/account/email/password_reset_key_message.txt:9
+#, python-format
+msgid ""
+"Thanks!\n"
+"\n"
+"The %(site_name)s team\n"
+msgstr ""
+
+#: templates/account/email_confirm.html:5
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: templates/account/email_confirm.html:9
+#, python-format
+msgid ""
+"\n"
+"    Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a>\n"
+"    is an e-mail address for user %(user_display)s.\n"
+"    "
+msgstr ""
+
+#: templates/account/email_confirm.html:17
+msgid "Confirm"
+msgstr ""
+
+#: templates/account/email_confirm.html:23
+#, python-format
+msgid ""
+"\n"
+"    This e-mail confirmation link expired or is invalid.\n"
+"    Please <a href=\"%(email_url)s\">issue a new e-mail confirmation "
+"request</a>.\n"
+"    "
+msgstr ""
+
+#: templates/account/login.html:10 templates/account/login.html:18
+#: templates/vss/admin/top_nav.html:68
+#: templates/vss/customer_portal/top_nav.html:68
+#: templates/vss/customer_portal_expert/top_nav.html:68
+#: templates/web/components/hero.html:21
+#: templates/web/components/top_nav.html:56
+msgid "Sign In"
+msgstr "S'identifier"
+
+#: templates/account/login.html:23
+msgid "Forgot password?"
+msgstr "Mot de passe oublié?"
+
+#: templates/account/logout.html:7
+msgid "Are you sure you want to sign out?"
+msgstr "Êtes-vous certain de vouloir vous déconnecter?"
+
+#: templates/account/logout.html:15
+#, fuzzy
+#| msgid "Sign out"
+msgid "Sign Out"
+msgstr "Déconnexion"
+
+#: templates/account/logout.html:20
+msgid "Home"
+msgstr ""
+
+#: templates/account/password_change.html:8
+#: templates/account/password_change.html:16
+#: templates/account/password_reset_from_key.html:5
+#: templates/account/password_reset_from_key.html:28
+#: templates/account/password_reset_from_key_done.html:4
+#: templates/vss/components/user_menu.html:23
+#: templates/web/components/app_nav_menu_items.html:33
+msgid "Change Password"
+msgstr "Changer le mot de passe"
+
+#: templates/account/password_reset.html:7
+#: templates/account/password_reset_done.html:5
+msgid "Password Reset"
+msgstr "Réinitialisation du mot de passe"
+
+#: templates/account/password_reset.html:11
+msgid ""
+"Forgot your password? Enter your e-mail address below, and we'll send you an "
+"e-mail allowing you to reset it."
+msgstr ""
+
+#: templates/account/password_reset.html:17
+msgid "Send Password Reset"
+msgstr ""
+
+#: templates/account/password_reset.html:20
+msgid ""
+"\n"
+"        Please contact us if you have any trouble resetting your password.\n"
+"      "
+msgstr ""
+
+#: templates/account/password_reset_done.html:10
+msgid ""
+"\n"
+"        We've sent you an e-mail. Please get in touch if you do not receive "
+"it within a few minutes.\n"
+"        "
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:5
+msgid "Bad Token"
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:10
+msgid ""
+"\n"
+"        The password reset link was invalid, possibly because it has already "
+"been used.\n"
+"      "
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:15
+#, python-format
+msgid ""
+"\n"
+"        Please request a <a href=\"%(passwd_reset_url)s\">new password "
+"reset</a>.\n"
+"      "
+msgstr ""
+
+#: templates/account/password_reset_from_key.html:32
+msgid "Your password is now changed."
+msgstr ""
+
+#: templates/account/password_reset_from_key_done.html:7
+msgid ""
+"\n"
+"            Your password has been changed.\n"
+"            "
+msgstr ""
+
+#: templates/account/password_reset_from_key_done.html:13
+#, python-format
+msgid ""
+"\n"
+"            You can now <a href=\"%(login_url)s\">login</a> with your new "
+"password.\n"
+"            "
+msgstr ""
+
+#: templates/account/password_set.html:8 templates/account/password_set.html:14
+msgid "Set Password"
+msgstr "Définir le mot de passe"
+
+#: templates/account/signup.html:27 templates/socialaccount/signup.html:6
+#: templates/socialaccount/signup.html:9 templates/socialaccount/signup.html:21
+#: templates/vss/admin/top_nav.html:65
+#: templates/vss/customer_portal/top_nav.html:65
+#: templates/vss/customer_portal_expert/top_nav.html:65
+#: templates/web/components/top_nav.html:53
+msgid "Sign Up"
+msgstr "S'inscrire"
+
+#: templates/account/signup.html:30
+#, fuzzy
+#| msgid "Create account"
+msgid "Already have account?"
+msgstr "Créer un compte"
+
+#: templates/account/signup.html:32
+msgid "Go to sign in."
+msgstr ""
+
+#: templates/account/signup_closed.html:4
+#: templates/account/signup_closed.html:7
+#, fuzzy
+#| msgid "Sign Up"
+msgid "Sign Up Closed"
+msgstr "S'inscrire"
+
+#: templates/account/signup_closed.html:8
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: templates/account/verification_sent.html:4
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: templates/account/verification_sent.html:6
+msgid ""
+"\n"
+"        We have sent an e-mail to you for verification.\n"
+"        Follow the link provided to finalize the signup process.\n"
+"        "
+msgstr ""
+
+#: templates/account/verification_sent.html:12
+msgid ""
+"\n"
+"        Please contact us if you do not receive it within a few minutes.\n"
+"        "
+msgstr ""
+
+#: templates/allauth_2fa/authenticate.html:7
+msgid "Two-Factor Authentication"
+msgstr ""
+
+#: templates/allauth_2fa/authenticate.html:14
+#: templates/allauth_2fa/setup.html:22
+msgid "Verify"
+msgstr ""
+
+#: templates/allauth_2fa/backup_tokens.html:5
+msgid "Two-Factor Authentication Backup Tokens"
+msgstr ""
+
+#: templates/allauth_2fa/backup_tokens.html:14
+msgid ""
+"Backup tokens have been generated, but are not revealed here for security "
+"reasons. Press the button below to generate new ones."
+msgstr ""
+
+#: templates/allauth_2fa/backup_tokens.html:17
+msgid ""
+"No backup tokens have been created. Press the button below to generate some."
+msgstr ""
+
+#: templates/allauth_2fa/backup_tokens.html:23
+msgid "Generate backup tokens"
+msgstr ""
+
+#: templates/allauth_2fa/backup_tokens.html:29
+#: templates/allauth_2fa/remove.html:7
+msgid "Disable Two-Factor Authentication"
+msgstr ""
+
+#: templates/allauth_2fa/remove.html:8
+msgid ""
+"Please enter a valid authentication token to disable two-factor "
+"authentication:"
+msgstr ""
+
+#: templates/allauth_2fa/remove.html:16
+msgid "Disable Two-Factor"
+msgstr ""
+
+#: templates/allauth_2fa/setup.html:7
+msgid "Setup Two-Factor Authentication"
+msgstr ""
+
+#: templates/allauth_2fa/setup.html:8
+msgid "Step 1"
+msgstr ""
+
+#: templates/allauth_2fa/setup.html:10
+msgid ""
+"Scan the QR code below with a token generator of your choice (e.g. <a "
+"href=\"https://support.google.com/accounts/answer/1066447\" "
+"target=\"_blank\">Google Authenticator</a>)."
+msgstr ""
+
+#: templates/allauth_2fa/setup.html:13
+msgid "Step 2"
+msgstr ""
+
+#: templates/allauth_2fa/setup.html:14
+msgid "Input a token generated by the app:"
+msgstr ""
+
+#: templates/content/blog_page.html:30
+msgid "Image Gallery"
+msgstr ""
+
+#: templates/dashboard/user_dashboard.html:8
+#: templates/vss/components/user_menu.html:73
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:65
+#: templates/vss/customer_portal_expert/components/app_nav_menu_items.html:23
+#: templates/web/components/app_nav_menu_items.html:53
+#, fuzzy
+#| msgid "Dashboard"
+msgid "Project Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/dashboard/user_dashboard.html:23
+msgid "User Signups (Daily)"
+msgstr ""
+
+#: templates/dashboard/user_dashboard.html:27
+msgid "Registered Users (Total)"
+msgstr ""
+
+#: templates/ecommerce/components/product_card.html:27
+msgid ""
+"This product does not yet have a price and is so unavailable for purchase."
+msgstr ""
+
+#: templates/ecommerce/components/products_empty.html:3
+msgid "No Products Available!"
+msgstr ""
+
+#: templates/ecommerce/components/purchases_empty.html:5
+#: templates/teams/list_teams.html:46
+msgid "Nothing Here"
+msgstr ""
+
+#: templates/ecommerce/components/purchases_empty.html:8
+msgid "No Purchases"
+msgstr ""
+
+#: templates/ecommerce/components/purchases_empty.html:9
+msgid "When you buy a product from the store it will show up here."
+msgstr ""
+
+#: templates/ecommerce/components/purchases_empty.html:12
+msgid "View Store"
+msgstr ""
+
+#: templates/ecommerce/ecommerce_home.html:6
+#: templates/ecommerce/purchases.html:7
+msgid "My Stuff"
+msgstr ""
+
+#: templates/ecommerce/ecommerce_home.html:7
+#: templates/ecommerce/purchases.html:6
+msgid "Store"
+msgstr ""
+
+#: templates/pegasus/employees/htmx/new_employee_button.html:5
+#: templates/pegasus/employees/list_employees.html:44
+msgid "Add Employee"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:11
+#: templates/teams/list_teams.html:13
+#: templates/vss/customer_portal/views/manage_access.html:21
+msgid "Name"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:12
+msgid "Department"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:13
+msgid "Salary"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:27
+#: templates/teams/list_teams.html:28
+msgid "Edit"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:33
+msgid "Delete"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:52
+msgid "No Employees Yet!"
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:53
+msgid "Create your first employee below to get started."
+msgstr ""
+
+#: templates/pegasus/employees/list_employees.html:57
+msgid "Create Employee"
+msgstr ""
+
+#: templates/socialaccount/authentication_error.html:3
+msgid "Authentication Error"
+msgstr ""
+
+#: templates/socialaccount/authentication_error.html:11
+msgid "Social Network Login Failure"
+msgstr ""
+
+#: templates/socialaccount/authentication_error.html:12
+msgid ""
+"An error occurred while attempting to login via your social network account."
+msgstr ""
+
+#: templates/socialaccount/connections.html:3
+#: templates/socialaccount/connections.html:12
+msgid "Account Connections"
+msgstr ""
+
+#: templates/socialaccount/connections.html:11
+msgid "← Return to Profile"
+msgstr ""
+
+#: templates/socialaccount/connections.html:14
+msgid ""
+"You can sign in to your account using any of the following third party "
+"accounts:"
+msgstr ""
+
+#: templates/socialaccount/connections.html:37
+msgid ""
+"You currently have no social network accounts connected to this account."
+msgstr ""
+
+#: templates/socialaccount/connections.html:39
+msgid "Add a 3rd Party Account"
+msgstr ""
+
+#: templates/socialaccount/login.html:6
+#, python-format
+msgid "Connect %(provider)s"
+msgstr ""
+
+#: templates/socialaccount/login.html:8
+#, python-format
+msgid "You are about to connect a new third party account from %(provider)s."
+msgstr ""
+
+#: templates/socialaccount/login.html:10
+#, python-format
+msgid "Sign In Via %(provider)s"
+msgstr ""
+
+#: templates/socialaccount/login.html:12
+#, python-format
+msgid "You are about to sign in using a third party account from %(provider)s."
+msgstr ""
+
+#: templates/socialaccount/login.html:17
+msgid "Continue"
+msgstr "Continuer"
+
+#: templates/socialaccount/signup.html:11
+#, python-format
+msgid ""
+"You are about to use your %(provider_name)s account to login to\n"
+"%(site_name)s. As a final step, please complete the following form:"
+msgstr ""
+
+#: templates/teams/accept_invite.html:9
+msgid "Welcome!"
+msgstr ""
+
+#: templates/teams/accept_invite.html:13
+msgid "Accept Invitation?"
+msgstr ""
+
+#: templates/teams/accept_invite.html:15
+#, python-format
+msgid ""
+"\n"
+"            You've been invited to join %(team_name)s by %(by)s.\n"
+"            "
+msgstr ""
+
+#: templates/teams/accept_invite.html:26
+#, python-format
+msgid ""
+"\n"
+"                  This invitation was sent to %(invite_email)s but you're "
+"logged in as %(user_email)s.\n"
+"                  What would you like to do?\n"
+"                  "
+msgstr ""
+
+#: templates/teams/accept_invite.html:34
+#: templates/vss/components/user_menu.html:30
+#: templates/web/components/app_nav_menu_items.html:40
+msgid "Sign out"
+msgstr "Déconnexion"
+
+#: templates/teams/accept_invite.html:42
+#, fuzzy
+#| msgid "Create account"
+msgid "Create Account to Accept"
+msgstr "Créer un compte"
+
+#: templates/teams/accept_invite.html:48
+msgid ""
+"Sorry, it looks like that invitation has already been accepted or expired."
+msgstr ""
+
+#: templates/teams/accept_invite.html:51
+msgid ""
+"If you think this is a mistake, ask your team administrator to invite you "
+"again!"
+msgstr ""
+
+#: templates/teams/components/delete_team_modal.html:5
+msgid "Really delete team?"
+msgstr "Vraiment supprimer l'équipe ?"
+
+#: templates/teams/components/delete_team_modal.html:7
+#, python-format
+msgid ""
+"\n"
+"      This will permanently delete the <em><strong>%(team_name)s</strong></"
+"em> team and all associated data.\n"
+"      <strong>This action cannot be undone.</strong>\n"
+"      "
+msgstr ""
+"\n"
+"Cela supprimera définitivement l'équipe <em><strong>%(team_name)s</strong></"
+"em> et toutes les données associées.\n"
+"      <strong>Cette action ne peut pas être annulée.</strong>\n"
+"      "
+
+#: templates/teams/components/delete_team_modal.html:16
+msgid "I understand, permanently delete this team"
+msgstr "Je comprends, supprimer définitivement cette équipe"
+
+#: templates/teams/components/delete_team_modal.html:18
+#: templates/teams/components/remove_member_modal.html:23
+#: templates/vss/customer_portal/views/account_event_detail_2.html:87
+#: templates/vss/customer_portal/views/account_event_detail_2.html:125
+#: templates/vss/customer_portal_expert/views/participant.html:58
+msgid "Cancel"
+msgstr "Annuler"
+
+#: templates/teams/components/invitation_row.html:10
+msgid "Resend Invitation"
+msgstr ""
+
+#: templates/teams/components/invitation_row.html:14
+msgid "Cancel Invitation"
+msgstr ""
+
+#: templates/teams/components/remove_member_modal.html:5
+msgid "Leave team?"
+msgstr ""
+
+#: templates/teams/components/remove_member_modal.html:5
+msgid "Remove team member?"
+msgstr ""
+
+#: templates/teams/components/remove_member_modal.html:20
+msgid "I understand, leave team"
+msgstr ""
+
+#: templates/teams/components/remove_member_modal.html:20
+msgid "I understand, remove team member"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:6
+msgid "Invite Team Members"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:12
+msgid "Send Invitation"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:19
+msgid "Pending Invitations"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:25
+msgid "Invited"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:26
+#: templates/teams/manage_team.html:37
+msgid "Role"
+msgstr ""
+
+#: templates/teams/components/team_invitations.html:39
+msgid "Any pending invitations will show up here until accepted."
+msgstr ""
+
+#: templates/teams/list_teams.html:8
+#, fuzzy
+#| msgid "My Team"
+msgid "My Teams"
+msgstr "Mon Équipe"
+
+#: templates/teams/list_teams.html:22
+#, fuzzy
+#| msgid "Dashboard"
+msgid "View Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/teams/list_teams.html:28
+#, fuzzy
+#| msgid "My Details"
+msgid "View Details"
+msgstr "Mes Details"
+
+#: templates/teams/list_teams.html:39
+#: templates/vss/components/user_menu.html:60
+#: templates/web/components/team_nav_items.html:30
+#, fuzzy
+#| msgid "My Team"
+msgid "Add Team"
+msgstr "Mon Équipe"
+
+#: templates/teams/list_teams.html:49
+msgid "No Teams Yet!"
+msgstr ""
+
+#: templates/teams/list_teams.html:50
+msgid "Create your first team below to get started."
+msgstr ""
+
+#: templates/teams/manage_team.html:17
+msgid "Team Details"
+msgstr ""
+
+#: templates/teams/manage_team.html:24
+msgid "Save Details"
+msgstr ""
+
+#: templates/teams/manage_team.html:31
+msgid "Team Members"
+msgstr ""
+
+#: templates/teams/manage_team.html:36
+#: templates/vss/customer_portal/views/event_users_signup.html:52
+msgid "Member"
+msgstr ""
+
+#: templates/teams/manage_team.html:61
+msgid "Danger Zone"
+msgstr ""
+
+#: templates/teams/manage_team.html:63
+msgid "Delete Team"
+msgstr ""
+
+#: templates/teams/team_membership_details.html:26
+msgid "Date Joined"
+msgstr ""
+
+#: templates/teams/team_membership_details.html:34
+msgid "Update Role"
+msgstr ""
+
+#: templates/teams/team_membership_details.html:37
+msgid "You are not allowed to modify your own role."
+msgstr ""
+
+#: templates/teams/team_membership_details.html:42
+msgid "Leave Team"
+msgstr ""
+
+#: templates/teams/team_membership_details.html:44
+msgid "Remove from Team"
+msgstr ""
+
+#: templates/vss/admin/top_nav.html:22 templates/vss/admin/top_nav.html:51
+#: templates/vss/customer_portal/top_nav.html:22
+#: templates/vss/customer_portal/top_nav.html:51
+#: templates/vss/customer_portal_expert/top_nav.html:22
+#: templates/vss/customer_portal_expert/top_nav.html:51
+#: templates/web/components/top_nav.html:21
+#: templates/web/components/top_nav.html:35
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/vss/admin/top_nav.html:35
+#: templates/vss/customer_portal/top_nav.html:35
+#: templates/vss/customer_portal_expert/top_nav.html:35
+msgid "VSS-Shop"
+msgstr ""
+
+#: templates/vss/admin/top_nav.html:38
+#: templates/vss/customer_portal/top_nav.html:38
+#: templates/vss/customer_portal_expert/top_nav.html:38
+msgid "RESEARCH+DATA-Shop"
+msgstr ""
+
+#: templates/vss/admin/top_nav.html:41
+#: templates/vss/customer_portal/top_nav.html:41
+#: templates/vss/customer_portal_expert/top_nav.html:41
+msgid "REGnorm-Shop"
+msgstr ""
+
+#: templates/vss/admin/top_nav.html:44
+#: templates/vss/customer_portal/top_nav.html:44
+#: templates/vss/customer_portal_expert/top_nav.html:44
+msgid "Member Benefits"
+msgstr ""
+
+#: templates/vss/admin/top_nav.html:47
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:6
+#: templates/vss/customer_portal/top_nav.html:47
+#: templates/vss/customer_portal_expert/top_nav.html:47
+msgid "My user account"
+msgstr "Mon Compte"
+
+#: templates/vss/admin/top_nav.html:59
+#: templates/vss/customer_portal/top_nav.html:59
+#: templates/vss/customer_portal_expert/top_nav.html:59
+#: templates/web/components/top_nav.html:48
+msgid "Examples Gallery"
+msgstr "Galerie d'exemples"
+
+#: templates/vss/components/user_menu.html:42
+#: templates/web/components/team_nav_items.html:8
+msgid "Team Settings"
+msgstr ""
+
+#: templates/vss/components/user_menu.html:48
+#: templates/web/components/team_nav_items.html:14
+msgid "Switch Team"
+msgstr ""
+
+#: templates/vss/components/user_menu.html:68
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:54
+#: templates/vss/customer_portal_expert/components/app_nav_menu_items.html:12
+#: templates/web/components/app_nav_menu_items.html:47
+msgid "Admin"
+msgstr "Admin"
+
+#: templates/vss/components/user_menu.html:79
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:71
+#: templates/vss/customer_portal_expert/components/app_nav_menu_items.html:29
+#: templates/web/components/app_nav_menu_items.html:59
+msgid "Impersonate a User"
+msgstr "Usurper l'identité d'un utilisateur"
+
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:30
+#, fuzzy
+#| msgid "Invoice"
+msgid "My Invoices"
+msgstr "Facture"
+
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:48
+msgid "Magazine"
+msgstr "Revue"
+
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:79
+#: vss/settings.py:420
+msgid "VSS"
+msgstr ""
+
+#: templates/vss/customer_portal/components/app_nav_menu_items.html:108
+#, fuzzy
+#| msgid "Submit registrations"
+msgid "Administration"
+msgstr "Soumettre les inscriptions"
+
+#: templates/vss/customer_portal/views/account.html:10
+#: templates/vss/customer_portal/views/account.html:12
+#: templates/vss/customer_portal/views/manage_access.html:10
+#: templates/vss/customer_portal/views/manage_access.html:11
+msgid "Membership"
+msgstr "Membre"
+
+#: templates/vss/customer_portal/views/account.html:16
+#: templates/vss/customer_portal/views/manage_access.html:12
+msgid "Period"
+msgstr "Période"
+
+#: templates/vss/customer_portal/views/account.html:16
+#: templates/vss/customer_portal/views/manage_access.html:12
+msgid "Membership renews automatically"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account.html:21
+msgid "Committee expert"
+msgstr "Expert en comités"
+
+#: templates/vss/customer_portal/views/account.html:26
+msgid "Correspondence language"
+msgstr "Langue de correspondance"
+
+#: templates/vss/customer_portal/views/account.html:33
+msgid "Road & Traffic"
+msgstr "Strasse & Verkehr"
+
+#: templates/vss/customer_portal/views/account.html:39
+msgid "Addresses"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account.html:43
+msgid "Company address"
+msgstr "Adresse de l'entreprise"
+
+#: templates/vss/customer_portal/views/account.html:62
+msgid "Billing address"
+msgstr "Adresse de facturation"
+
+#: templates/vss/customer_portal/views/account.html:84
+#, fuzzy
+#| msgid "Delivery address"
+msgid "Private address"
+msgstr "Adresse privée"
+
+#: templates/vss/customer_portal/views/account.html:103
+msgid "Delivery address"
+msgstr "Address livraison"
+
+#: templates/vss/customer_portal/views/account_edit.html:17
+#: templates/vss/customer_portal/views/account_edit.html:19
+#: templates/vss/customer_portal/views/event_users_signup.html:25
+#: templates/vss/customer_portal/views/event_users_signup.html:27
+#: templates/vss/customer_portal/views/event_users_signup.html:50
+#: templates/vss/customer_portal/views/manage_access_add.html:14
+#: templates/vss/customer_portal/views/manage_access_add.html:16
+#: templates/vss/customer_portal_expert/views/home.html:16
+#: templates/vss/customer_portal_expert/views/home.html:79
+msgid "First name"
+msgstr "Prénom"
+
+#: templates/vss/customer_portal/views/account_edit.html:23
+#: templates/vss/customer_portal/views/account_edit.html:25
+#: templates/vss/customer_portal/views/event_users_signup.html:19
+#: templates/vss/customer_portal/views/event_users_signup.html:21
+#: templates/vss/customer_portal/views/event_users_signup.html:49
+#: templates/vss/customer_portal/views/manage_access_add.html:20
+#: templates/vss/customer_portal/views/manage_access_add.html:22
+#: templates/vss/customer_portal_expert/views/home.html:15
+#: templates/vss/customer_portal_expert/views/home.html:78
+msgid "Last name"
+msgstr "Nom de famille"
+
+#: templates/vss/customer_portal/views/account_edit.html:31
+#: templates/vss/customer_portal/views/account_edit.html:33
+msgid "Street and No."
+msgstr "Rue et numéro"
+
+#: templates/vss/customer_portal/views/account_edit.html:39
+#: templates/vss/customer_portal/views/account_edit.html:41
+#: templates/vss/customer_portal/views/manage_access_add.html:54
+#: templates/vss/customer_portal/views/manage_access_add.html:56
+msgid "Postcode"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account_edit.html:45
+#: templates/vss/customer_portal/views/account_edit.html:47
+#: templates/vss/customer_portal/views/account_event_detail.html:15
+#: templates/vss/customer_portal/views/account_event_detail_2.html:15
+#: templates/vss/customer_portal/views/account_event_detail_past.html:14
+#: templates/vss/customer_portal/views/account_event_detail_running.html:14
+#: templates/vss/customer_portal/views/account_events.html:17
+#: templates/vss/customer_portal/views/account_events.html:66
+#: templates/vss/customer_portal/views/account_events.html:93
+#: templates/vss/customer_portal/views/manage_access_add.html:60
+#: templates/vss/customer_portal/views/manage_access_add.html:62
+msgid "Location"
+msgstr "Emplacement"
+
+#: templates/vss/customer_portal/views/account_edit.html:53
+#: templates/vss/customer_portal/views/account_edit.html:55
+#: templates/vss/customer_portal/views/manage_access_add.html:34
+#: templates/vss/customer_portal/views/manage_access_add.html:36
+msgid "Mobile"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account_edit.html:60
+msgid "You will receive the access code to log in on this number"
+msgstr "Vous recevrez le code d'accès pour vous connecter sur ce numéro"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:9
+msgid "Confirmed"
+msgstr "Confirmé"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:13
+#: templates/vss/customer_portal/views/account_events.html:15
+#: templates/vss/customer_portal/views/account_events.html:64
+#: templates/vss/customer_portal/views/account_events.html:91
+msgid "Start date"
+msgstr "Date de début"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:14
+#: templates/vss/customer_portal/views/account_events.html:16
+#: templates/vss/customer_portal/views/account_events.html:65
+#: templates/vss/customer_portal/views/account_events.html:92
+msgid "End date"
+msgstr "Date de fin"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:17
+#: templates/vss/customer_portal/views/account_event_detail_2.html:17
+msgid "Cost"
+msgstr "Coût"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:18
+#: templates/vss/customer_portal/views/account_event_detail_2.html:18
+msgid "Member VSS"
+msgstr "Membre"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:19
+#: templates/vss/customer_portal/views/account_event_detail_2.html:19
+msgid "Non-member VSS"
+msgstr "Non-membre VSS"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:22
+#: templates/vss/customer_portal_expert/views/participant.html:25
+msgid "Document Uploads"
+msgstr "N° de document"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:27
+msgid "CV"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account_event_detail.html:32
+msgid "Proof of experience"
+msgstr "Preuve d'expérience"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:41
+msgid "Upload another document"
+msgstr "Télécharger un autre document"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:47
+#: templates/vss/customer_portal/views/account_event_detail_2.html:98
+#: templates/vss/customer_portal/views/account_event_detail_past.html:22
+#: templates/vss/customer_portal/views/account_event_detail_running.html:22
+msgid "Invoice"
+msgstr "Facture"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:49
+#: templates/vss/customer_portal/views/account_event_detail_past.html:24
+#: templates/vss/customer_portal/views/account_event_detail_running.html:24
+msgid "Download invoice"
+msgstr "Télécharger la facture"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:53
+msgid "Log out"
+msgstr "Se déconnecter"
+
+#: templates/vss/customer_portal/views/account_event_detail.html:55
+#: templates/vss/customer_portal/views/account_event_detail_2.html:107
+msgid "I want to unsubscribe from this event"
+msgstr "Je souhaite me désinscrire de cet événement"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:9
+msgid "Not yet confirmed"
+msgstr "Pas encore confirmé"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:13
+msgid "Start Date"
+msgstr "Date de début"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:14
+msgid "End Date"
+msgstr "Date de fin"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:22
+msgid "My selected workshops"
+msgstr "Mes ateliers sélectionnés"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:27
+#: templates/vss/customer_portal/views/account_event_detail_2.html:36
+#: templates/vss/customer_portal/views/account_event_detail_2.html:67
+msgid "AM"
+msgstr "SUIS"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:28
+#: templates/vss/customer_portal/views/account_event_detail_2.html:71
+msgid "Traffic safety"
+msgstr "Sécurité routière"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:37
+msgid "Technology"
+msgstr "Technologie"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:48
+msgid "Registered for dinner"
+msgstr "Inscrit pour le dîner"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:65
+msgid "Change workshop"
+msgstr "Atelier de changement"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:67
+msgid "Time"
+msgstr "Temps"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:77
+msgid "Implementation of maintenance planning and..."
+msgstr "Mise en œuvre de la planification de la maintenance et..."
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:78
+msgid "Unfortunately, the maximum number of participants has been reached"
+msgstr "Malheureusement, le nombre maximum de participants a été atteint"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:100
+msgid ""
+"Your invoice will be displayed here once the workshop and your participation "
+"are definitively confirmed."
+msgstr ""
+"Votre facture s'affichera ici une fois l'atelier et votre "
+"participationdéfinitivement confirmés."
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:105
+#: templates/vss/customer_portal/views/account_event_detail_2.html:114
+msgid "Unsubscribe"
+msgstr "Se désabonner"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:116
+msgid "Are you sure you want to unsubscribe from this event?"
+msgstr "Etes-vous sûr de vouloir vous désinscrire de cet événement ?"
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:117
+msgid "To unsubscribe, type 'unsubscribe' in the field below."
+msgstr ""
+"Pour vous désabonner, tapez « se désabonner » dans le champ ci-dessous."
+
+#: templates/vss/customer_portal/views/account_event_detail_2.html:128
+msgid "Confirm Unsubscribe"
+msgstr "Confirmer la désinscription"
+
+#: templates/vss/customer_portal/views/account_event_detail_past.html:9
+msgid "Completed"
+msgstr "Complété"
+
+#: templates/vss/customer_portal/views/account_event_detail_past.html:13
+#: templates/vss/customer_portal/views/account_event_detail_running.html:13
+#: templates/vss/customer_portal_expert/views/participant.html:10
+msgid "Date"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account_event_detail_past.html:18
+#: templates/vss/customer_portal/views/account_event_detail_running.html:18
+msgid "Download participation certificate"
+msgstr "Certificat de participation"
+
+#: templates/vss/customer_portal/views/account_event_detail_running.html:9
+msgid "Ongoing"
+msgstr "En cours"
+
+#: templates/vss/customer_portal/views/account_events.html:10
+msgid "Future events"
+msgstr "Événements à venir"
+
+#: templates/vss/customer_portal/views/account_events.html:14
+#: templates/vss/customer_portal/views/account_events.html:63
+#: templates/vss/customer_portal/views/account_events.html:90
+#: templates/vss/customer_portal_expert/views/home.html:18
+#: templates/vss/customer_portal_expert/views/home.html:81
+msgid "Event"
+msgstr ""
+
+#: templates/vss/customer_portal/views/account_events.html:59
+msgid "Ongoing events"
+msgstr "Événement"
+
+#: templates/vss/customer_portal/views/account_events.html:86
+msgid "Past events"
+msgstr "Événements passés"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:10
+msgid "Register people for the event"
+msgstr "Inscrire des personnes à l'événement"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:40
+msgid "Multiple people? Upload CSV"
+msgstr "Plusieurs personnes? Télécharger un fichier CSV"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:53
+msgid "Price"
+msgstr "Prix"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:62
+msgid "Single"
+msgstr "Célibataire"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:73
+msgid "Back"
+msgstr "Dos"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:76
+msgid "Add another person"
+msgstr "Ajouter une autre personne"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:80
+msgid "Next"
+msgstr "suivant"
+
+#: templates/vss/customer_portal/views/event_users_signup.html:84
+msgid "Submit registrations"
+msgstr "Soumettre les inscriptions"
+
+#: templates/vss/customer_portal/views/manage_access.html:11
+msgid "Free institutional member"
+msgstr ""
+
+#: templates/vss/customer_portal/views/manage_access.html:15
+msgid "Access"
+msgstr "Accéder"
+
+#: templates/vss/customer_portal/views/manage_access.html:22
+#: templates/vss/customer_portal/views/manage_access_add.html:28
+#: templates/vss/customer_portal/views/manage_access_add.html:30
+#: templates/vss/customer_portal_expert/views/home.html:80
+#: templates/vss/customer_portal_expert/views/participant.html:20
+msgid "E-Mail"
+msgstr ""
+
+#: templates/vss/customer_portal/views/manage_access.html:23
+msgid "Status"
+msgstr "Statut"
+
+#: templates/vss/customer_portal/views/manage_access.html:63
+msgid "Add new access"
+msgstr "Ajouter un nouvel accès"
+
+#: templates/vss/customer_portal/views/manage_access_add.html:40
+msgid "Employee's private address"
+msgstr "Adresse privée de l'employé"
+
+#: templates/vss/customer_portal/views/manage_access_add.html:46
+#: templates/vss/customer_portal/views/manage_access_add.html:48
+msgid "Street and number"
+msgstr "Rue et numéro"
+
+#: templates/vss/customer_portal/views/manage_access_add.html:66
+msgid "Multiple accesses? Upload CSV"
+msgstr "Accès multiples ? Télécharger le fichier CSV"
+
+#: templates/vss/customer_portal/views/publication_notes.html:60
+#: templates/vss/customer_portal/views/publication_view.html:12
+#: templates/vss/customer_portal/views/publication_view.html:16
+#: templates/vss/customer_portal/views/publication_view.html:62
+#: templates/vss/customer_portal/views/publications.html:60
+msgid "Document No."
+msgstr "Numéro de document"
+
+#: templates/vss/customer_portal/views/publication_notes.html:61
+#: templates/vss/customer_portal/views/publications.html:61
+msgid "Publication"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publication_notes.html:62
+#: templates/vss/customer_portal/views/publication_view.html:28
+#: templates/vss/customer_portal/views/publication_view.html:66
+#: templates/vss/customer_portal/views/publications.html:62
+msgid "Year"
+msgstr "Année"
+
+#: templates/vss/customer_portal/views/publication_notes.html:63
+#: templates/vss/customer_portal/views/publication_view.html:46
+#: templates/vss/customer_portal/views/publications.html:63
+msgid "Tags"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publication_notes.html:79
+#: templates/vss/customer_portal/views/publications.html:89
+msgid "Follow-up publication available"
+msgstr "Follow-up publication available"
+
+#: templates/vss/customer_portal/views/publication_view.html:32
+#: templates/vss/customer_portal/views/publication_view.html:68
+msgid "Languages"
+msgstr "Langue"
+
+#: templates/vss/customer_portal/views/publication_view.html:42
+#: templates/vss/customer_portal/views/publication_view.html:71
+msgid "View in web viewer"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publication_view.html:48
+#: templates/vss/customer_portal/views/publications.html:20
+msgid "Construction site"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publication_view.html:54
+msgid "A new version of this publication is available"
+msgstr "Une nouvelle version de cette publication est disponible"
+
+#: templates/vss/customer_portal/views/publication_view.html:60
+msgid "NEW"
+msgstr "Nouveau"
+
+#: templates/vss/customer_portal/views/publication_view.html:64
+msgid "Document No. (alternative)"
+msgstr "Numéro de document (alternatif)"
+
+#: templates/vss/customer_portal/views/publication_view.html:72
+msgid "Learn more"
+msgstr "Apprendre encore plus"
+
+#: templates/vss/customer_portal/views/publications.html:13
+#: templates/vss/customer_portal/views/publications.html:15
+msgid "Search"
+msgstr "Recherche"
+
+#: templates/vss/customer_portal/views/publications.html:19
+msgid "Search for Tags"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publications.html:21
+msgid "Road construction"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publications.html:22
+msgid "Traffic"
+msgstr ""
+
+#: templates/vss/customer_portal/views/publications.html:28
+msgid "My favorites"
+msgstr "Favorit"
+
+#: templates/vss/customer_portal/views/publications.html:64
+msgid "Access until"
+msgstr "Accès jusqu'à"
+
+#: templates/vss/customer_portal/views/publications.html:162
+msgid "Publications"
+msgstr ""
+
+#: templates/vss/customer_portal_expert/components/app_nav_menu_items.html:6
+msgid "Veranstaltungen"
+msgstr "Contrats de location"
+
+#: templates/vss/customer_portal_expert/components/app_nav_menu_items.html:17
+msgid "Zugänge Verwalten"
+msgstr ""
+
+#: templates/vss/customer_portal_expert/views/home.html:9
+msgid "Open participants"
+msgstr "Participants ouverts"
+
+#: templates/vss/customer_portal_expert/views/home.html:70
+msgid "Confirmed participants"
+msgstr "Participants confirmés"
+
+#: templates/vss/customer_portal_expert/views/participant.html:11
+msgid "Location:"
+msgstr "Emplacement"
+
+#: templates/vss/customer_portal_expert/views/participant.html:16
+msgid "open"
+msgstr ""
+
+#: templates/vss/customer_portal_expert/views/participant.html:18
+msgid "Membership status"
+msgstr "Statut de membre"
+
+#: templates/vss/customer_portal_expert/views/participant.html:19
+msgid "Address"
+msgstr "Adresse"
+
+#: templates/vss/customer_portal_expert/views/participant.html:21
+msgid "Phone"
+msgstr "Téléphone"
+
+#: templates/vss/customer_portal_expert/views/participant.html:22
+msgid "Company/University"
+msgstr "Entreprise/Université"
+
+#: templates/vss/customer_portal_expert/views/participant.html:30
+msgid "Resume"
+msgstr ""
+
+#: templates/vss/customer_portal_expert/views/participant.html:34
+msgid "Proof of Experience"
+msgstr "Preuve d'expérience"
+
+#: templates/vss/customer_portal_expert/views/participant.html:43
+#: templates/vss/customer_portal_expert/views/participant.html:51
+msgid "Confirm participation"
+msgstr "Confirmer la participation"
+
+#: templates/vss/customer_portal_expert/views/participant.html:44
+msgid "Decline participation"
+msgstr "Refuser la participation"
+
+#: templates/vss/customer_portal_expert/views/participant.html:53
+msgid "Do you want to accept the participant for this event?"
+msgstr "Souhaitez-vous accepter le participant à cet événement ?"
+
+#: templates/vss/customer_portal_expert/views/participant.html:61
+#, fuzzy
+#| msgid "Success!"
+msgid "Accept"
+msgstr "Succès!"
+
+#: templates/vss/customer_portal_expert/views/participant.html:68
+msgid "Are the documents incomplete? Contact the participant"
+msgstr "Les documents sont incomplets ? Contactez le participant"
+
+#: templates/vss/customer_portal_expert/views/participant.html:69
+msgid "E-Mail to participant"
+msgstr "Courriel au participant"
+
+#: templates/vss/home.html:6
+msgid "VSS home"
+msgstr ""
+
+#: templates/vss/home.html:13
+msgid "VSS Components"
+msgstr ""
+
+#: templates/web/app_home.html:8 templates/web/components/hero.html:8
+msgid "Fly Away!"
+msgstr ""
+
+#: templates/web/app_home.html:11
+msgid "You're Signed In!"
+msgstr "Vous êtes connecté !"
+
+#: templates/web/app_home.html:13
+msgid "This is your application's logged in home page."
+msgstr "Il s'agit de la page d'accueil de connexion de votre application."
+
+#: templates/web/app_home.html:16
+#, python-format
+msgid "You're logged into the \"%(team_name)s\" Team."
+msgstr "Vous êtes connecté à l'équipe \"%(team_name)s\"."
+
+#: templates/web/components/app_nav_menu_items.html:3
+msgid "Application"
+msgstr "Application"
+
+#: templates/web/components/app_nav_menu_items.html:8
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/web/components/app_nav_menu_items.html:15
+msgid "E-Commerce"
+msgstr ""
+
+#: templates/web/components/app_nav_menu_items.html:20
+msgid "My Account"
+msgstr "Mon Compte"
+
+#: templates/web/components/footer.html:4
+msgid "Copyright"
+msgstr "Droits d'auteur"
+
+#: templates/web/components/footer.html:7
+msgid ""
+"🦄 Built with <a class=\"link\" href=\"https://www.saaspegasus.com/\" "
+"target=\"_blank\">SaaS Pegasus</a>"
+msgstr ""
+
+#: templates/web/components/hero.html:18
+msgid "Create account"
+msgstr "Créer un compte"
+
+#: templates/web/components/team_nav.html:7
+msgid "Example App"
+msgstr "Exemple d'application"
+
+#: vss/settings.py:270
+msgid "English"
+msgstr "Anglais"
+
+#: vss/settings.py:271
+msgid "French"
+msgstr "Français"
+
+#: vss/settings.py:272
+msgid "German"
+msgstr ""
+
+#: vss/settings.py:422
+msgid "VSS Kundenportal"
+msgstr ""
+
+#, fuzzy, python-brace-format
+#~| msgid "Subscription Demo"
+#~ msgid "Subscription | {team}"
+#~ msgstr "Démo d'abonnement"
+
+#, fuzzy, python-brace-format
+#~| msgid "Subscription Demo"
+#~ msgid "Subscription Demo | {team}"
+#~ msgstr "Démo d'abonnement"
+
+#~ msgid "API Keys"
+#~ msgstr "Clés API"
+
+#~ msgid "Prefix"
+#~ msgstr "Préfixe"
+
+#~ msgid "Created"
+#~ msgstr "Établi"
+
+#~ msgid "Revoke"
+#~ msgstr "Révoquer"
+
+#~ msgid "You haven't created any API keys yet. Create one below."
+#~ msgstr ""
+#~ "Vous n'avez pas encore lié de comptes sociaux. Créez-en un ci-dessous."
+
+#~ msgid "New API Key"
+#~ msgstr "Nouvelle clé API"
+
+#~ msgid "Continue with Google"
+#~ msgstr "Continuer avec Google"
+
+#~ msgid "Continue with Twitter"
+#~ msgstr "Continuer avec Twitter"
+
+#~ msgid "Connected Accounts"
+#~ msgstr "Comptes connectés"
+
+#~ msgid "You haven't linked any social accounts yet. Create one below."
+#~ msgstr ""
+#~ "Vous n'avez pas encore lié de comptes sociaux. Créez-en un ci-dessous."
+
+#~ msgid "or"
+#~ msgstr "ou"
+
+#, fuzzy, python-format
+#~| msgid ""
+#~| "\n"
+#~| "      This will permanently delete the <em><strong>%(team_name)s</"
+#~| "strong></em> team and all associated data.\n"
+#~| "      <strong>This action cannot be undone.</strong>\n"
+#~| "      "
+#~ msgid ""
+#~ "\n"
+#~ "        This will permanently delete the <em><strong>%(team_name)s</"
+#~ "strong></em> team and all associated data.\n"
+#~ "        "
+#~ msgstr ""
+#~ "\n"
+#~ "Cela supprimera définitivement l'équipe <em><strong>%(team_name)s</"
+#~ "strong></em> et toutes les données associées.\n"
+#~ "      <strong>Cette action ne peut pas être annulée.</strong>\n"
+#~ "      "
+
+#~ msgid "Teams"
+#~ msgstr "Équipes"
+
+#~ msgid "Subscription Demo"
+#~ msgstr "Démo d'abonnement"
+
+#~ msgid "Subscription"
+#~ msgstr "Abonnement"
+
+#, fuzzy, python-format
+#~| msgid ""
+#~| "\n"
+#~| "      This will permanently delete the <em><strong>%(team_name)s</"
+#~| "strong></em> team and all associated data.\n"
+#~| "      <strong>This action cannot be undone.</strong>\n"
+#~| "      "
+#~ msgid ""
+#~ "\n"
+#~ "      This will permanently delete the <em><strong>%(team_name)s</"
+#~ "strong></em> team and all associated data.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "Cela supprimera définitivement l'équipe <em><strong>%(team_name)s</"
+#~ "strong></em> et toutes les données associées.\n"
+#~ "      <strong>Cette action ne peut pas être annulée.</strong>\n"
+#~ "      "
+
+#~ msgid "Pegasus Examples"
+#~ msgstr "Pegasus Exemples"

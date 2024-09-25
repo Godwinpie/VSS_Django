@@ -1,0 +1,43 @@
+default_context:
+  _pegasus_version: 2024.4.2
+  ai_chat_mode: none
+  author_name: Martin Bachmann
+  ci: none
+  css_framework: tailwind
+  css_theme: default
+  database: postgres
+  deploy_platform: none
+  description: VSS Kundenportal
+  docker_setup: default
+  domain_name: localhost:8000
+  email: m.bachmann@insign.ch
+  enable_github_login: n
+  enable_google_login: n
+  enable_twitter_login: n
+  front_end_framework: htmx
+  include_static_files: y
+  marketing_email_platform: mailchimp
+  post_process: y
+  project_name: VSS
+  project_slug: vss
+  standalone_front_end: none
+  stripe_payment_mode: checkout
+  subscription_billing_model: default
+  subscription_pricing_ui: in_app
+  use_2fa: y
+  use_admin_docs: y
+  use_api_auth: y
+  use_api_keys: n
+  use_async_example: n
+  use_cloud_media_storage: n
+  use_debug_toolbar: n
+  use_docker: y
+  use_ecommerce_example: y
+  use_examples: y
+  use_impersonation: y
+  use_sentry: y
+  use_subscriptions: n
+  use_teams: y
+  use_teams_example: y
+  use_translations: y
+  use_wagtail: y

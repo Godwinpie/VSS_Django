@@ -1,0 +1,136 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <div class="flex justify-between">
+        <h1>{{ title }}</h1>
+        <div class="badge badge-error">{% trans "Not yet confirmed" %}</div>
+    </div>
+</section>
+<section class="mt-8">
+    <div class="mb-2">{% trans "Start Date" %}: 02.11.2024</div>
+    <div class="mb-2">{% trans "End Date" %}: 02.11.2024</div>
+    <div class="mb-6">{% trans "Location" %}: Kongresshaus, Biel</div>
+    <div class="mb-6">
+        <h3>{% trans "Cost" %}:</h3>
+        <div>{% trans "Member VSS" %}: <span>CHF 2700.-</span></div>
+        <div>{% trans "Non-member VSS" %}: <span>CHF 2950.-</span></div>
+    </div>
+    <div>
+        <h3>{% trans "My selected workshops" %}</h3>
+        <div>
+            <table class="table max-w-sm">
+                <tbody>
+                    <tr>
+                        <td>08:30 - 11:00 {% trans "AM" %}</td>
+                        <td>{% trans "Traffic safety" %}</td>
+                        <td width="1%" class="p-1">
+                            <button class="btn btn-ghost btn-sm btn-circle" onclick="workshop_modal.showModal()">
+                                <i class="fa-solid fa-pen-to-square text-sm"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>13:30 - 16:30 {% trans "AM" %}</td>
+                        <td>{% trans "Technology" %}</td>
+                        <td width="1%" class="p-1">
+                            <button class="btn btn-ghost btn-sm btn-circle" onclick="workshop_modal.showModal()">
+                                <i class="fa-solid fa-pen-to-square text-sm"></i>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <span class="text-gray-400">
+                                <i class="fa-regular fa-square-check"></i>
+                                {% trans "Registered for dinner" %}
+                            </span>
+                        </td>
+                        <td width="1%" class="p-1">
+                            <button class="btn btn-ghost btn-sm btn-circle" onclick="workshop_modal.showModal()">
+                                <i class="fa-solid fa-pen-to-square text-sm"></i>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <dialog id="workshop_modal" class="modal">
+            <div class="modal-box">
+                <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 outline-none">✕</button>
+                </form>
+                <h3 class="font-bold">{% trans "Change workshop" %}</h3>
+                <div class="w-full py-4">
+                    <p class="mb-4">{% trans "Time" %}: 08:30 - 11:00 {% trans "AM" %}</p>
+                    <div class="form-control">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="radio-10" class="radio" checked />
+                            <span class="label-text ml-4">{% trans "Traffic safety" %}</span>
+                        </label>
+                    </div>
+                    <div class="form-control">
+                        <label class="label cursor-pointer justify-start">
+                            <input type="radio" name="radio-11" class="radio" disabled />
+                            <span class="label-text ml-4 text-gray-300">{% trans "Implementation of maintenance planning and..." %}</span>
+                            <div class="tooltip ml-4" data-tip="{% trans 'Unfortunately, the maximum number of participants has been reached' %}">
+                                <i class="fa-regular fa-circle-question"></i>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="modal-action">
+                    <form method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">{% trans "Cancel" %}</button>
+                    </form>
+                    <button class="btn btn-primary">
+                        {% trans "Save" %}
+                    </button>
+                </div>
+            </div>
+        </dialog>
+    </div>
+</section>
+<section class="mt-8">
+    <h3>{% trans "Invoice" %}</h3>
+    <div>
+        {% trans "Your invoice will be displayed here once the workshop and your participation are definitively confirmed." %}
+    </div>
+</section>
+
+<section class="mt-8">
+    <h3>{% trans "Unsubscribe" %}</h3>
+    <div>
+        <a class="link link-secondary" onclick="event_leave_modal.showModal()">{% trans "I want to unsubscribe from this event" %}</a>
+    </div>
+    <dialog id="event_leave_modal" class="modal">
+        <div class="modal-box">
+            <form method="dialog">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 outline-none">✕</button>
+            </form>
+            <h3 class="font-bold">{% trans "Unsubscribe" %}</h3>
+            <div class="py-4">
+                <p class="mb-4">{% trans "Are you sure you want to unsubscribe from this event?" %}</p>
+                <p class="mb-4">{% trans "To unsubscribe, type 'unsubscribe' in the field below." %}</p>
+                <div>
+                    <input type="text" class="input input-bordered w-full max-w-xs" autofocus />
+                </div>
+            </div>
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">{% trans "Cancel" %}</button>
+                </form>
+                <button class="btn btn-error">
+                    {% trans "Confirm Unsubscribe" %}
+                </button>
+            </div>
+        </div>
+    </dialog>
+</section>
+
+{% endblock %}
+

@@ -1,0 +1,33 @@
+{% load i18n %}
+
+<li>
+  <a href="{% url 'vss:vss_home_expert' %}" {% if active_tab == 'vss_home_expert' %}class="active"{% endif %}>
+    <i class="fa-regular fa-calendar mr-1"></i>
+    {% translate "Veranstaltungen" %}
+  </a>
+</li>
+
+{% if user.is_superuser %}
+<li class="menu-title">
+  <span>{% translate "Admin" %}</span>
+</li>
+<ul class="menu-list">
+  <li>
+    <a href="{% url 'web:home' %}" {% if active_tab == 'dashboard' %}class="active"{% endif %}>
+      {% translate "Zugänge Verwalten" %}
+    </a>
+  </li>
+  <!-- <li>
+    <a href="{% url 'dashboard:dashboard' %}" {% if active_tab == 'project-dashboard' %}class="active"{% endif %}>
+      <i class="fa fa-bar-chart-o h-4 w-4"></i>
+      {% translate "Project Dashboard" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'support:hijack_user' %}" {% if active_tab == 'support' %}class="active"{% endif %}>
+      <i class="fa fa-user-secret h-4 w-4"></i>
+      {% translate "Impersonate a User" %}
+    </a>
+  </li> -->
+</ul>
+{% endif %}
