@@ -1,0 +1,22 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <div class="max-w-2xl">
+        <form method="post" action="{% url 'vss:vss_language_edit' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="my-4">
+                <button type="submit" class="btn btn-primary">
+                    {% trans "Save" %}
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}

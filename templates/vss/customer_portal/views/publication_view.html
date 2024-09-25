@@ -1,0 +1,78 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <div class="grid grid-cols-3 gap-y-8">
+        <div>
+            <p class="font-bold">{% trans "Document No." %}</p>
+            <p>VSS-40568_2021-01_DE</p>
+        </div>
+        <div>
+            <p class="font-bold">{% trans "Document No." %}</p>
+            <p>40802</p>
+        </div>
+        <div>
+            <button class="btn btn-ghost btn-sm btn-circle">
+                <i class="fa-regular fa-note-sticky"></i>
+            </button>
+            <button class="btn btn-ghost btn-sm btn-circle">
+                <i class="fa-solid fa-star"></i>
+            </button>
+        </div>
+        <div>
+            <p class="font-bold">{% trans "Year" %}</p>
+            <p>2021</p>
+        </div>
+        <div>
+            <p class="font-bold">{% trans "Languages" %}</p>
+            <p>DE, FR</p>
+        </div>
+    </div>
+    <div class="mt-8">
+        <p class="font-bold">Lorem ipsum dolor sit amet</p>
+        <p>Lorem ipsum dolor sit amet</p>
+    </div>
+    <div class="mt-8">
+        <button class="btn btn-primary w-full">
+            {% trans "View in web viewer" %}
+        </button>
+    </div>
+    <div class="mt-8">
+        <p class="font-bold">{% trans "Tags" %}</p>
+        <div class="flex gap-1 mt-2">
+            <div class="badge badge-lg badge-secondary">{% trans "Construction site" %}</div>
+        </div>
+    </div>
+    <div class="mt-8">
+        <div role="alert" class="alert alert-warning">
+            <i class="fa-solid fa-triangle-exclamation text-lg"></i>
+            <span>{% trans "A new version of this publication is available" %}</span>
+        </div>
+        <div class="card bg-base-300 shadow-xl mt-8 max-w-96">
+            <div class="card-body">
+                <div class="flex gap-2 flex-wrap mb-2 absolute -top-4 -left-4">
+                    <div class="badge badge-xl badge-primary">VSS</div>
+                    <div class="badge badge-xl badge-secondary">{% trans "NEW" %}</div>
+                </div>
+                <p class="font-bold">{% trans "Document No." %}</p>
+                <p>VSS-40568_2022-02_DE</p>
+                <p class="font-bold">{% trans "Document No. (alternative)" %}</p>
+                <p>40856</p>
+                <p class="font-bold">{% trans "Year" %}</p>
+                <p>2022</p>
+                <p class="font-bold">{% trans "Languages" %}</p>
+                <p>DE, FR</p>
+                <div class="mt-8 flex flex-col gap-2">
+                    <button class="btn btn-primary btn-outline w-full">{% trans "View in web viewer" %}</button>
+                    <button class="btn btn-primary w-full">{% trans "Learn more" %}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

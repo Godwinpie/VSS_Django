@@ -1,0 +1,22 @@
+{% extends "web/app/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    <h1 class="card-title">{% translate "VSS home" %}</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-6">
+        <div class="card shadow-xl">
+            <figure>
+                <img src="https://www.vss.ch/fileadmin/_processed_/2/5/csm_vss_hg_03_f30b7af971.jpg" />
+            </figure>
+            <div class="card-body">
+                <h1 class="card-title">{% translate "VSS Components" %}</h1>
+                <div>ayyy</div>
+                <div class="flex justify-end">
+                    <a href="{% url 'vss:vss_components' %}" class="btn btn-primary">Components</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

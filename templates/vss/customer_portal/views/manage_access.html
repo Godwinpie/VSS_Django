@@ -1,0 +1,68 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section>
+    <h2>{% translate "Membership" %}</h2>
+    <p><strong>{% translate "Membership" %}</strong>: {% translate "Free institutional member" %}</p>
+    <p><strong>{% translate "Period" %}</strong>: 01.01.2024 - 31.12.2024 ({% translate "Membership renews automatically" %})</p>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Access" %}</h2>
+    <div class="overflow-x-auto card border">
+        <table class="table table-zebra">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>{% trans "Name" %}</th>
+                    <th>{% trans "E-Mail" %}</th>
+                    <th>{% trans "Status" %}</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Max Muster</td>
+                    <td>m.muster@example.com</td>
+                    <td>akzeptiert</td>
+                    <td width="1%" class="p-1">
+                        <button class="btn btn-ghost btn-sm btn-circle">
+                            <i class="fa-solid fa-trash text-sm"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max Muster</td>
+                    <td>m.muster@example.com</td>
+                    <td>akzeptiert</td>
+                    <td width="1%" class="p-1">
+                        <button class="btn btn-ghost btn-sm btn-circle">
+                            <i class="fa-solid fa-trash text-sm"></i>
+                        </button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Max Muster</td>
+                    <td>m.muster@example.com</td>
+                    <td>akzeptiert</td>
+                    <td width="1%" class="p-1">
+                        <button class="btn btn-ghost btn-sm btn-circle">
+                            <i class="fa-solid fa-trash text-sm"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="flex justify-end gap-4 mt-8">
+        <a class="btn btn-secondary" href="{% url 'vss:vss_manage_access_add' %}">
+            {% trans "Add new access" %}
+            <i class="fa-solid fa-plus"></i>
+        </a>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,116 @@
+{% load i18n %}
+
+<li>
+  <a href="{% url 'vss:vss_account' %}" {% if active_tab == 'vss_account' %}class="active"{% endif %}>
+    <i class="fa-regular fa-user mr-1"></i>
+    {% translate "My user account" %}
+  </a>
+</li>
+<li>
+  <a href="{% url 'vss:vss_account_publications' %}" {% if active_tab == 'vss_account_publications' %}class="active"{% endif %}>
+    <i class="fa-regular fa-copy mr-1"></i>
+    {% translate "My publications" %}
+  </a>
+</li>
+<li class="ml-6">
+  <a href="{% url 'vss:vss_account_publication_notes' %}" {% if active_tab == 'vss_account_publications_notes' %}class="active"{% endif %}>
+    <i class="fa-regular fa-note-sticky mr-1"></i>
+    {% translate "My notes" %}
+  </a>
+</li>
+<li>
+    <a href="{% url 'vss:vss_order_overview' %}" {% if active_tab == 'vss_order_overview' %}class="active"{% endif %}>
+        <i class="fa-solid fa-box mr-1"></i>
+        {% translate "My orders" %}
+    </a>
+</li>
+<li>
+    <a href="{% url 'vss:vss_invoice_overview' %}" {% if active_tab == 'vss_invoice_overview' %}class="active"{% endif %}>
+        <i class="fa-solid fa-file-invoice mr-1"></i>
+        {% translate "My Invoices" %}
+    </a>
+</li>
+<li>
+  <a href="{% url 'vss:vss_account_events' %}" {% if active_tab == 'vss_account_events' %}class="active"{% endif %}>
+    <i class="fa-regular fa-calendar-days mr-1"></i>
+    {% translate "My events" %}
+  </a>
+</li>
+<li>
+  <a href="{% url 'vss:vss_manage_access' %}" {% if active_tab == 'vss_manage_access' %}class="active"{% endif %}>
+    <i class="fa-solid fa-lock mr-1"></i>
+    {% translate "Manage access" %}
+  </a>
+</li>
+<li>
+  <a href="{% url 'web:home' %}" {% if active_tab == 'dashboard' %}class="active"{% endif %}>
+    <i class="fa-regular fa-newspaper mr-1"></i>
+    {% translate "Magazine" %}
+  </a>
+</li>
+
+{% if user.is_superuser %}
+<li class="menu-title">
+  <span>{% translate "Admin" %}</span>
+</li>
+<ul class="menu-list">
+  <li>
+    <a href="{% url 'web:home' %}" {% if active_tab == 'dashboard' %}class="active"{% endif %}>
+      {% translate "Manage access" %}
+    </a>
+  </li>
+  <!-- <li>
+    <a href="{% url 'dashboard:dashboard' %}" {% if active_tab == 'project-dashboard' %}class="active"{% endif %}>
+      <i class="fa fa-bar-chart-o h-4 w-4"></i>
+      {% translate "Project Dashboard" %}
+    </a>
+  </li>
+  <li>
+    <a href="{% url 'support:hijack_user' %}" {% if active_tab == 'support' %}class="active"{% endif %}>
+      <i class="fa fa-user-secret h-4 w-4"></i>
+      {% translate "Impersonate a User" %}
+    </a>
+  </li> -->
+</ul>
+{% endif %}
+
+{% if request.user.has_firm_vss %}
+    <li class="menu-title">
+        <span>{% translate "VSS" %}</span>
+    </li>
+    <li>
+        <a href="{% url 'vss:vss_admin_dashboard' %}" {% if active_tab == 'vss_admin_dashboard' %}class="active"{% endif %}>
+            {% translate "VSS Dashboard" %}
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'vss:vss_admin_events' %}" {% if active_tab == 'vss_admin_events' %}class="active"{% endif %}>
+            {% translate "Events" %}
+        </a>
+    </li>
+    <li class="ml-6">
+        <a href="{% url 'vss:vss_admin_sub_events' %}" {% if active_tab == 'vss_admin_sub_events' %}class="active"{% endif %}>
+            {% trans "Events" %}
+        </a>
+    </li>
+    <li class="ml-6">
+        <a href="{% url 'vss:vss_admin_cas' %}" {% if active_tab == 'vss_admin_cas' %}class="active"{% endif %}>
+            {% trans "CAS" %}
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'vss:vss_admin_participant_certificate' %}" {% if active_tab == 'vss_admin_participant_certificate' %}class="active"{% endif %}>
+            {% translate "Participant certificate" %}
+        </a>
+    </li>
+    <li class="ml-6">
+        <a href="{% url 'vss:vss_admin_administration' %}" {% if active_tab == 'vss_admin_administration' %}class="active"{% endif %}>
+            {% trans "Administration" %}
+        </a>
+    </li>
+    <li>
+        <a href="{% url 'vss:vss_admin_membership_access' %}" {% if active_tab == 'vss_admin_membership_access' %}class="active"{% endif %}>
+            {% translate "Membership and access" %}
+        </a>
+    </li>
+{% endif %}

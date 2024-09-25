@@ -1,0 +1,131 @@
+{% extends "vss/customer_portal_expert/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <h2>{% trans "Open participants" %}</h2>
+    <div class="overflow-x-auto card border">
+        <table class="table table-zebra">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th>{% trans "Last name" %}</th>
+                    <th>{% trans "First name" %}</th>
+                    <th>{% trans "Email" %}</th>
+                    <th>{% trans "Event" %}</th>
+                    <th width="1%"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Perez</td>
+                    <td>Juan</td>
+                    <td>j.perez@fan.ch</td>
+                    <td>CAS Verkehrssicherheit</td>
+                    <td width="1%" class="p-1">
+                        <div class="flex gap-1">
+                            <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perez</td>
+                    <td>Juan</td>
+                    <td>j.perez@fan.ch</td>
+                    <td>CAS Verkehrssicherheit</td>
+                    <td width="1%" class="p-1">
+                        <div class="flex gap-1">
+                            <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Perez</td>
+                    <td>Juan</td>
+                    <td>j.perez@fan.ch</td>
+                    <td>CAS Verkehrssicherheit</td>
+                    <td width="1%" class="p-1">
+                        <div class="flex gap-1">
+                            <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                <i class="fa-regular fa-eye"></i>
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<section class="mt-16">
+    <div class="collapse collapse-arrow">
+        <input type="checkbox" /> 
+        <div class="collapse-title text-xl font-medium">
+            {% trans "Confirmed participants" %}
+        </div>
+        <div class="collapse-content mt-4"> 
+            <div class="overflow-x-auto card border">
+                <table class="table table-zebra">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th>{% trans "Last name" %}</th>
+                            <th>{% trans "First name" %}</th>
+                            <th>{% trans "E-Mail" %}</th>
+                            <th>{% trans "Event" %}</th>
+                            <th width="1%"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Perez</td>
+                            <td>Juan</td>
+                            <td>j.perez@fan.ch</td>
+                            <td>CAS Verkehrssicherheit</td>
+                            <td width="1%" class="p-1">
+                                <div class="flex gap-1">
+                                    <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Perez</td>
+                            <td>Juan</td>
+                            <td>j.perez@fan.ch</td>
+                            <td>CAS Verkehrssicherheit</td>
+                            <td width="1%" class="p-1">
+                                <div class="flex gap-1">
+                                    <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Perez</td>
+                            <td>Juan</td>
+                            <td>j.perez@fan.ch</td>
+                            <td>CAS Verkehrssicherheit</td>
+                            <td width="1%" class="p-1">
+                                <div class="flex gap-1">
+                                    <a href="{% url 'vss:vss_expert_participant' %}" class="btn btn-ghost btn-sm btn-circle">
+                                        <i class="fa-regular fa-eye"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </div>
+</section>
+{% endblock %}

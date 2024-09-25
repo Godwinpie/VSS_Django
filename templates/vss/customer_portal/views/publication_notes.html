@@ -1,0 +1,119 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <!-- <div class="grid grid-cols-4 gap-4 mb-8 items-center">
+        <label class="form-control">
+            <div class="label sr-only">
+                <span class="label-text">Suche</span>
+            </div>
+            <input type="text" placeholder="Suche" class="input input-bordered w-full" />
+        </label>
+        <div>
+            <select class="select select-bordered w-full">
+                <option selected>Search for Tags</option>
+                <option>Baustelle</option>
+                <option>Strassenbau</option>
+                <option>Verkehr</option>
+            </select>
+        </div>
+        <div class="justify-self-center">
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text mr-8">Meine Favoriten</span>
+                    <input type="checkbox" class="checkbox hidden peer" />
+                    <span class="peer-checked:hidden">
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <span class="hidden peer-checked:block">
+                        <i class="fa-solid fa-star"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+        <div class="justify-self-center">
+            <div class="form-control">
+                <label class="label cursor-pointer">
+                    <span class="label-text mr-8">Meine Notizen</span>
+                    <input type="checkbox" class="checkbox hidden peer" />
+                    <span class="peer-checked:hidden">
+                        <i class="fa-regular fa-note-sticky"></i>
+                    </span>
+                    <span class="hidden peer-checked:block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 448 512"><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H288V368c0-26.5 21.5-48 48-48H448V96c0-35.3-28.7-64-64-64H64zM448 352H402.7 336c-8.8 0-16 7.2-16 16v66.7V480l32-32 64-64 32-32z"/></svg>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </div> -->
+    <div class="overflow-x-auto card border">
+        <table class="table table-zebra">
+            <!-- head -->
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>{% trans "Document No." %}</th>
+                    <th>{% trans "Publication" %}</th>
+                    <th>{% trans "Year" %}</th>
+                    <th>{% trans "Tags" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td><a href="{% url 'vss:vss_account_publication_view' %}">FB1</a></td>
+                    <td><a href="{% url 'vss:vss_account_publication_view' %}">Längsebenheit: Anforderungen und Zustandsindex gemäss europäischen Auswertungsmethoden</a></td>
+                    <td>2024</td>
+                    <td>
+                        <div class="flex gap-1 flex-wrap">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="tooltip tooltip-right" data-tip="{% trans 'Follow-up publication available' %}">
+                            <i class="fa-solid fa-triangle-exclamation text-warning text-lg"></i>
+                        </div>
+                    </td>
+                    <td class="text-nowrap"><a href="{% url 'vss:vss_account_publication_view' %}">VSS-40568_2024-01_DE</a></td>
+                    <td><a href="{% url 'vss:vss_account_publication_view' %}">Passive Sicherheit im Strassenraum - Geländer</a></td>
+                    <td>2024</td>
+                    <td>
+                        <div class="flex gap-1 flex-wrap">
+                            <div class="badge badge-secondary">Baustelle</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>VSS-40568_2024-01_DE</td>
+                    <td>Passive Sicherheit im Strassenraum - Geländer</td>
+                    <td>2024</td>
+                    <td>
+                        <div class="flex gap-1 flex-wrap">
+                            <div class="badge badge-secondary">Baustelle</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>VSS-40568_2024-01_DE</td>
+                    <td>Passive Sicherheit im Strassenraum - Geländer</td>
+                    <td>2024</td>
+                    <td>
+                        <div class="flex gap-1 flex-wrap">
+                            <div class="badge badge-secondary">Baustelle</div>
+                            <div class="badge badge-secondary">Verkehr</div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}

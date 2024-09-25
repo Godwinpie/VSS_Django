@@ -1,0 +1,69 @@
+{% extends "vss/customer_portal/app_base.html" %}
+{% load i18n %}
+{% load static %}
+{% block app %}
+<section>
+    {% include 'vss/components/breadcrumbs.html' %}
+    <h1>{{ title }}</h1>
+</section>
+<section class="mt-8">
+    <div class="max-w-2xl">
+        <form method="post">
+            {% csrf_token %}
+{#            {{ form.as_p }}#}
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans "First name" %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'First name' %}" class="input input-bordered w-full" />
+                </div>
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans "Last name" %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'Last name' %}" class="input input-bordered w-full" />
+                </div>
+            </div>
+            <div class="mb-4">
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans "Street and No." %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'Street and No.' %}" class="input input-bordered w-full" />
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-3 mb-4">
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans 'Postcode' %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'Postcode' %}" class="input input-bordered w-full" />
+                </div>
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans 'Location' %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'Location' %}" class="input input-bordered w-full" />
+                </div>
+            </div>
+            <div class="">
+                <div class="form-control">
+                    <div class="label">
+                        <span class="label-text">{% trans 'Mobile' %}</span>
+                    </div>
+                    <input type="text" placeholder="{% trans 'Mobile' %}" class="input input-bordered w-full" />
+                    <div class="label">
+                    <span class="label-text-alt text-gray-400">
+                        <i class="fa-regular fa-circle-question pr-1"></i>
+                        auf diese Nummer erhalten Sie den Zugangscode um sich einzuloggen
+                        {% trans 'You will receive the access code to log in on this number' %}
+                    </span>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
